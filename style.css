@@ -19,3 +19,7 @@ button {
   text-decoration: none;
   margin-top: 20px;
 }
+button:hover{
+ background: #a6a6a6;
+ text-decoration: none;
+}
