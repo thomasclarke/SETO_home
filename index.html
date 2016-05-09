@@ -2,11 +2,62 @@
   <head>
     <title> SETO Apps Center </title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
   <body>
+    <script>
+    $(document).ready(function(){
+        $("#all").hide();
+        var allState =  0;
+        $("#search").click(function(){
+            location.replace("http://seto.pcriot.com/search1/");
+        });
+        $("#travel").click(function(){
+            location.replace("http://seto.pcriot.com/travel");
+        });
+        $("#generator").click(function(){
+            location.replace("http://seto.pcriot.com/generator/");
+        });
+        $("#hwhelp").click(function(){
+            location.replace("http://seto.pcriot.com/homeworkhelp//")
+        });
+        $("#show").click(function(){
+            if(allState == 0) {
+                $("#all").fadeIn();
+                $("#show").text("Hide all seto apps");
+            }
+            else{ 
+                if(allState == 1){
+                    allState = 0
+                    $("#all").fadeOut();
+                    $("#show").text("Show all seto apps");
+                }
+            }
+        });
+            
+        ;
+                  
+      
+    </script>
     <center>
     <img src="festisite_google.png" height="100" />
-    </center>
+    <h1 style="font-family: Arial">
+    APP CENTER    
+    </h1>
+    <button id="search">Seto Search</button>
+    <button id="travel">Seto Travel</button>
+    <button id="generator">Seto HTML Generator</button>
+    <button id="hwhelp">Seto Homework Help</button><br>
+    <button id="show">Show all seto apps</button>
+    
+    <div id="all">
+    <button id="hackfake">Seto HackFake</button>
+    <button id="dev">Seto Developer</button>
+    <button id="games">Seto Games</button>
+    <button id="promo">Seto Promo Video</button>
+    <button id="resources">Seto Resources</button>
+    </div>
+      </center>
   </body>
 
 
