@@ -1,3 +1,6 @@
+body {
+  font-family: Arial;
+}
 button {
   height:40px;
   -webkit-border-radius: 6;
