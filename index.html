@@ -1,5 +1,4 @@
-<html>
-  <head>
+ <head>
     <title> SETO Apps Center </title>
     <link rel="stylesheet" href="style.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
@@ -10,7 +9,7 @@
         $("#all").hide();
         var allState =  0;
         $("#search").click(function(){
-            location.replace("http://seto.pcriot.com/search1/");
+            window.location.replace("http://seto.pcriot.com/search1");
         });
         $("#travel").click(function(){
             location.replace("http://seto.pcriot.com/travel");
@@ -23,10 +22,11 @@
         });
         $("#show").click(function(){
             if(allState == 0) {
+                allState = 1
                 $("#all").fadeIn();
                 $("#show").text("Hide all seto apps");
             }
-            else{ 
+            else { 
                 if(allState == 1){
                     allState = 0
                     $("#all").fadeOut();
@@ -34,13 +34,11 @@
                 }
             }
         });
-            
-        ;
+    });
                   
       
     </script>
     <center>
-<<<<<<< HEAD
     <img src="festisite_google.png" height="100" />
     <h1 style="font-family: Arial">
     APP CENTER    
@@ -59,14 +57,4 @@
     <button id="resources">Seto Resources</button>
     </div>
       </center>
-=======
-    <img src="festisite_google.png" height='60px'/>
-    <h1>App Hub</h1>
-    </center>
-    <button>HI</button>
->>>>>>> origin/master
   </body>
-
-
-
-</html>
